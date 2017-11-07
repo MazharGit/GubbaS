@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_first_contact_form"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="First Contact Form"/>
+        <item
+            android:id="@+id/nav_first_contact_form_list"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="First Contact Form List"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_call_missed_outgoing_black_24dp"
+            android:title="Logout"/>
+    </group>
+</menu>

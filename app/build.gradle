@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'saksham'
+            storeFile file('saksham')
+            storePassword 'saksham'
+        }
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.mazhar.g"
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id               : "17e3221c-58c7-4c39-b4e7-8a556651de09",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "763331152935"]
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/opencsv-1.7.jar')
+                                                 //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.github.traex.rippleeffect:library:1.3'
+    compile 'me.omidh:rvelib:0.8.01'
+    compile 'com.ernestoyaquello.stepperform:vertical-stepper-form:0.9.9'
+    compile 'com.yarolegovich:sliding-root-nav:1.1.0'
+
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.onesignal:OneSignal:[3.5.3,4.0.0)'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'id.zelory:compressor:2.1.0'
+    compile 'com.android.support:support-annotations:25.3.1'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:preference-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:animated-vector-drawable:26.1.0'
+
+
+}
