@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Organization   " />
+
+        <TextView
+            android:id="@+id/organization"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Location   " />
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Document Type   " />
+
+        <TextView
+            android:id="@+id/documenttype"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Dock Number   " />
+
+        <TextView
+            android:id="@+id/documentnumber"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Customer Name   " />
+
+        <TextView
+            android:id="@+id/customername"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Address   " />
+
+        <TextView
+            android:id="@+id/customeraddress"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Dock In Time   " />
+
+        <TextView
+            android:id="@+id/dockintime"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Dock Out Time   " />
+
+        <TextView
+            android:id="@+id/dockouttime"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="DC No   " />
+
+        <TextView
+            android:id="@+id/dcno"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Pest Infected   " />
+
+        <TextView
+            android:id="@+id/pestinfected"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Temperature1   " />
+
+        <TextView
+            android:id="@+id/temperature1"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Temperature2   " />
+
+        <TextView
+            android:id="@+id/temperature2"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Packing Condition   " />
+
+        <TextView
+            android:id="@+id/packingcondition"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Season Code   " />
+
+        <TextView
+            android:id="@+id/seasoncode"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Customer Representative   " />
+
+        <TextView
+            android:id="@+id/customerrepresentative"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Gate Entry Number   " />
+
+        <TextView
+            android:id="@+id/gateentrynumber"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Total Packaging Units   " />
+
+        <TextView
+            android:id="@+id/totalpackagingunits"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Total Quantity   " />
+
+        <TextView
+            android:id="@+id/totalquantity"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Status   " />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Hamali Contractor   " />
+
+        <TextView
+            android:id="@+id/hamalicontractor"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="No. of Hamali   " />
+
+        <TextView
+            android:id="@+id/noofhamali"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Spillage Quantity   " />
+
+        <TextView
+            android:id="@+id/spillagequantity"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/farmRegLo"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dlog"
+            android:layout_gravity="start"
+            android:text="Hamali Mamul Charges   " />
+
+        <TextView
+            android:id="@+id/hamalimamulcharges"
+            style="@style/dlog"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonbackground"
+            android:id="@+id/edit"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonbackground"
+            android:id="@+id/product"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspection"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonbackground"
+            android:id="@+id/inspection"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Weight"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonbackground"
+            android:id="@+id/productweight"/>
+
+    </LinearLayout>
+
+</LinearLayout>

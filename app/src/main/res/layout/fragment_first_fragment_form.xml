@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    android:fillViewport="true"
-    tools:context="com.example.mazhar.g.Fragments.FirstContactForm">
-    <LinearLayout
+    android:fillViewport="true">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:title=" First Contact Form"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        >
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_documentno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#808080"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -30,8 +49,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
-                    android:layout_margin="5dp"
-                    android:hint="Document No."
+                    android:hint="Document Number"
+                    android:textSize="20sp"
                     android:textColor="#808080" />
             </android.support.design.widget.TextInputLayout>
 
@@ -40,6 +59,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -47,8 +68,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
-                    android:layout_margin="5dp"
-                    android:hint="Location"
+                    android:textSize="20sp"
+                    android:hint="Location*"
                     android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
@@ -58,6 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:hintTextAppearance="@style/TextLabel"
+                app:errorEnabled="true"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -65,8 +88,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
-                    android:layout_margin="5dp"
-                    android:hint="Company Name"
+                    android:hint="Company Name*"
+                    android:textSize="20sp"
                     android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
@@ -74,7 +97,9 @@
                 android:id="@+id/input_layout_contactname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextLabel"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -82,8 +107,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
-                    android:layout_margin="5dp"
-                    android:hint="Contact Name"
+                    android:hint="Contact Name*"
+                    android:textSize="20sp"
                     android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
@@ -91,7 +116,9 @@
                 android:id="@+id/input_layout_contactno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextLabel"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
                 style="@style/materialindent">
 
                 <EditText
@@ -99,10 +126,10 @@
                     android:layout_width="match_parent"
                     android:textColor="#1f0036"
                     android:layout_height="wrap_content"
-                    android:hint="Contact No."
+                    android:hint="Contact Number*"
                     android:inputType="number"
-                    android:layout_margin="5dp"
                     android:maxLength="10"
+                    android:textSize="20sp"
                     android:focusable="true"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -111,6 +138,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:hintTextAppearance="@style/TextLabel"
+                app:errorEnabled="true"
                 style="@style/materialindent">
 
                 <EditText
@@ -118,9 +147,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#1f0036"
-                    android:layout_margin="5dp"
                     android:focusable="true"
-                    android:hint="Email"
+                    android:textSize="20sp"
+                    android:hint="Email*"
                     />
             </android.support.design.widget.TextInputLayout>
 
@@ -129,6 +158,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:hintTextAppearance="@style/TextLabel"
+                app:errorEnabled="true"
                 style="@style/materialindent">
 
                 <EditText
@@ -136,9 +167,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#1f0036"
-                    android:layout_margin="5dp"
                     android:focusable="true"
-                    android:hint="City"
+                    android:textSize="20sp"
+                    android:hint="City*"
                     />
             </android.support.design.widget.TextInputLayout>
 
@@ -147,16 +178,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:hintTextAppearance="@style/TextLabel"
+                app:errorEnabled="true"
                 style="@style/materialindent">
 
                 <EditText
                     android:id="@+id/input_requirementdetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
                     android:textColor="#1f0036"
                     android:focusable="true"
-                    android:hint="Requirement Details"
+                    android:textSize="20sp"
+                    android:hint="Requirement Details*"
                     />
             </android.support.design.widget.TextInputLayout>
 
@@ -165,6 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:hintTextAppearance="@style/TextLabel"
                 app:errorEnabled="true"
                 style="@style/materialindent">
 
@@ -173,24 +207,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#1f0036"
-                    android:layout_margin="2dp"
                     android:focusable="false"
-                    android:hint="Priority"
+                    android:textSize="20sp"
+                    android:hint="Priority*"
                     />
             </android.support.design.widget.TextInputLayout>
 
-            <Button android:id="@+id/createlead"
+            <Button android:id="@+id/button"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:text="Create Lead"
+                android:text="Save"
+                android:layout_marginTop="10dp"
                 android:textAllCaps="false"
                 android:background="@drawable/ripple"
-                android:layout_margin="5dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 />
 
         </LinearLayout>
 
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>

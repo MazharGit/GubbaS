@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:fillViewport="true"
-    tools:context="com.example.mazhar.g.Fragments.FirstContactForm">
-    <LinearLayout
+    style="@style/scrollbar_shape_style"
+    tools:context="com.gubba1.gubba1.g.ssg.example.mazhar.g.Fragments.FirstContactForm">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:title="  CRM Lead Enquiry"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        >
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="20dp"
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
@@ -23,15 +42,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
                     android:id="@+id/input_productname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:focusable="true"
-                    android:layout_margin="8dp"
-                    android:hint="Product Name"
+                    android:focusable="false"
+                    android:hint="Product Name*"
                     android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
@@ -40,15 +60,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
                     android:id="@+id/input_uom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:focusable="true"
-                    android:layout_margin="8dp"
-                    android:hint="UOM"
+                    android:focusable="false"
+                    android:hint="UOM*"
                     android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
@@ -57,6 +78,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -64,8 +87,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
-                    android:layout_margin="8dp"
-                    android:hint="Quantity"
+                    android:hint="Quantity*"
+                    android:inputType="numberDecimal"
                     android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
@@ -74,6 +97,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <EditText
@@ -81,8 +106,8 @@
                     android:layout_width="match_parent"
                     android:textColor="#1f0036"
                     android:layout_height="wrap_content"
-                    android:hint="From Temperature"
-                    android:layout_margin="8dp"
+                    android:hint="From Temperature*"
+                    android:inputType="numberDecimal"
                     android:focusable="true"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -91,6 +116,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <EditText
@@ -98,9 +125,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#1f0036"
-                    android:layout_margin="8dp"
+                    android:inputType="numberDecimal"
                     android:focusable="true"
-                    android:hint="To Temperature"
+                    android:hint="To Temperature*"
                     />
             </android.support.design.widget.TextInputLayout>
 
@@ -109,6 +136,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <EditText
@@ -116,9 +145,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#1f0036"
-                    android:layout_margin="8dp"
                     android:focusable="true"
-                    android:hint="Requirement Details"
+                    android:hint="Requirement Details*"
                     />
             </android.support.design.widget.TextInputLayout>
 
@@ -128,6 +156,7 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
                 app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
                 style="@style/materialindent">
 
                 <EditText
@@ -135,16 +164,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#1f0036"
-                    android:layout_margin="8dp"
                     android:focusable="false"
-                    android:hint="Location"
+                    android:hint="Location*"
                     />
             </android.support.design.widget.TextInputLayout>
 
-            <Button android:id="@+id/next"
+            <Button android:id="@+id/save"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:text="Next"
+                android:text="Save"
                 android:textAllCaps="false"
                 android:background="@drawable/ripple"
                 android:layout_margin="10dp"
@@ -154,5 +182,5 @@
 
         </LinearLayout>
 
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:title="  Gate Entry "
+        app:titleTextColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Organization"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Location"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_prealertslotno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_prealertslotno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Pre Alert Slot No.*"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_transactiontypee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_transactiontypee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Transaction Type"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_scheduledintime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_scheduledintime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Pre Alert Scheduled in Time"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_customernamee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_customernamee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Customer Name*"
+                    android:textColor="#1f0036" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_vehiclenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_vehiclenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:hint="Vehicle Number*"
+                    android:textColor="#1f0036" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_drivername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_drivername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Driver Name*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_driverphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_driverphonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="Driver Phone Number*"
+                    android:textColor="#1f0036" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_driverlicensenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_driverlicensenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Driver License Number*"
+                    android:textColor="#1f0036" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dcnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_dcnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="true"
+                    android:hint="DC Number*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_totalnoofpackagingunits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_totalnoofpackagingunits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:inputType="numberDecimal"
+                    android:focusable="true"
+                    android:hint="Total no of Packaging Units as per DC*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_totalqtyasperdc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0000ff"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/TextLabel"
+            style="@style/materialindent">
+
+            <EditText
+                android:id="@+id/input_totalqtyasperdc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1f0036"
+                android:focusable="true"
+                android:inputType="numberDecimal"
+                android:hint="Total Qty as per DC*"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_prealertrescheduledintime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_prealertrescheduledintime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="false"
+                    android:hint="Pre Alert Rescheduled in Time"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dockintime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_dockintime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Dock in Time*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_gateentry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_gateentry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="false"
+                    android:hint="Gate Entry Number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_gateentrytime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_gateentrytime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="false"
+                    android:hint="Gate Entry Time"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_gateentrydate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="false"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_gateentrydate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="true"
+                    android:hint="Gate Entry Date"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                android:layout_marginTop="30dp"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="false"
+                    android:hint="Status"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dockoutoftime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_dockoutoftime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="false"
+                    android:hint="Dock out Time"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_gateoutoftime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_gateoutoftime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:focusable="false"
+                    android:hint="Gate out Time"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/save"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/ripple"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

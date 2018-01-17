@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:title="  Inward Memo Product"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_productcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_productcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Product Category*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_productname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Product Name*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_hybrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_hybrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Hybrid*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_customerdepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_customerdepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Customer Department*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_batchno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_batchno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Batch Number*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_moisturepercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_moisturepercent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:hint="Moisture Percent"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_handlingqtydc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_handlingqtydc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Handling Quantity(DC)*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_handlingqtyactual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_handlingqtyactual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Handling Quantity(Actual)*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_handlinguom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_handlinguom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Handling UOM"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_billingqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_billingqty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Billing Quantity*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_billinguom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_billinguom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:hint="Billing UOM"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_chamber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_chamber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:hint="Chamber"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_baynumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_baynumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Bay Number*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_manufacturingdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_manufacturingdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:hint="Manufacturing Date"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_grill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_grill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Grill In/Out"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_expirydate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_expirydate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Expiry Date"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/save"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/ripple"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

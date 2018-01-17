@@ -6,7 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:fillViewport="true"
-    tools:context="com.example.mazhar.g.Fragments.FirstContactFormDetails">
+    style="@style/scrollbar_shape_style"
+    tools:context="com.gubba1.gubba1.g.ssg.example.mazhar.g.Fragments.FirstContactFormDetails">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:title="  Inward Memo Product Bay Wise Denomination"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_chamber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_chamber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Chamber"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_bay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_bay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Bay"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Product*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_nooflayers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_nooflayers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="No of Layers*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_noofrowsm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_noofrowsm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="No of rows/Matrix 1*"
+                    android:textColor="#808080" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_noofcolumnsm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/input_noofcolumnsm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:hint="No of Columns/Matrix 1*"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_noofrowsm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_noofrowsm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="No of rows/Matrix 2*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_noofcolumnsm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_noofcolumnsm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="No of Columns/Matrix 2*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_loosebags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_loosebags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Loose Bags*"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_handlingunits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_handlingunits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:hint="Total no. of handling Units"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_handlingunitsuom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0000ff"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextLabel"
+                style="@style/materialindent">
+
+                <EditText
+                    android:id="@+id/input_handlingunitsuom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1f0036"
+                    android:focusable="false"
+                    android:hint="Total no. of handling Units UOM"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/save"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/ripple"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

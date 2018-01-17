@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.mazhar.g.Home"
     tools:showIn="@layout/app_bar_home">
+
+    <com.srx.widget.PullToLoadView
+        android:id="@+id/pullToLoadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </android.support.constraint.ConstraintLayout>

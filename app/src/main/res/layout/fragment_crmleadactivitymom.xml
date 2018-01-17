@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:fillViewport="true"
-    tools:context="com.example.mazhar.g.Fragments.FirstContactForm">
-    <LinearLayout
+    style="@style/scrollbar_shape_style">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:title="  CRM Lead Activity MOM"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar">
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="20dp"
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
@@ -23,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                android:layout_marginTop="15dp"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -32,7 +50,7 @@
                     android:focusable="false"
                     android:layout_margin="10dp"
                     android:hint="Assigned To"
-                    android:textColor="#808080" />
+                    android:textColor="#1f0036" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -40,6 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                android:layout_marginTop="15dp"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -57,6 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#0000ff"
+                android:layout_marginTop="15dp"
                 style="@style/materialindent">
 
                 <android.support.v7.widget.AppCompatEditText
@@ -73,6 +93,7 @@
                 android:id="@+id/input_layout_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:textColorHint="#0000ff"
                 style="@style/materialindent">
 
@@ -83,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Type"
                     android:layout_margin="10dp"
-                    android:focusable="true"/>
+                    android:focusable="false"/>
             </android.support.design.widget.TextInputLayout>
 
             <Button android:id="@+id/confirm"
@@ -93,11 +114,12 @@
                 android:textAllCaps="false"
                 android:background="@drawable/ripple"
                 android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 />
 
         </LinearLayout>
 
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>
